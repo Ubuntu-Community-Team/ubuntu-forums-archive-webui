@@ -362,20 +362,33 @@
             });
     }
     
-    // High-performance search system utilizing inverted alphabet shards
+// High-performance search system utilizing high-density 2-character shards
     function handleSearch(query) {
-        const cleanQuery = query.trim().toLowerCase();
+        // Strip spaces and special formatting symbols out of query parameters
+        const cleanQuery = query.trim().toLowerCase().replace(/[^a-z0-9_]/g, '');
         if (!cleanQuery) { loadHome(); return; }
 
         updateBreadcrumb(`<span onclick="goToHome()">Ubuntu Forums</span> > Search Results`);
+
+        // UX Guardrail: Force users to input at least 2 characters to trigger shard arrays
+        if (cleanQuery.length < 2) {
+            document.getElementById('content-area').innerHTML = `
+                <h2 style="margin-top:0;">Search Results</h2>
+                <p style="color: #666; font-style: italic;">Please input at least 2 characters to query deep archive shards...</p>
+            `;
+            return;
+        }
         
-        const firstLetter = cleanQuery[0];
-        const targetShard = (/[a-z]/.test(firstLetter)) ? firstLetter : "0";
+        // Extract the exact 2-character file path string routing key
+        const targetShard = cleanQuery.slice(0, 2);
 
         if (currentShardLetter !== targetShard) {
             currentShardLetter = targetShard;
             fetch(`shards/${targetShard}.json?t=` + Date.now())
-                .then(res => res.json())
+                .then(res => {
+                    if (!res.ok) throw new Error();
+                    return res.json();
+                })
                 .then(shardData => {
                     activeShardData = shardData;
                     renderShardSearchResults(cleanQuery);
@@ -393,33 +406,42 @@
         let html = `<h2 style="margin-top:0;">Global Deep Index Matches for "${query}"</h2>`;
         currentSearchResults = []; 
         let matchesFound = 0;
+        const seenFiles = new Set();
 
-        // Check if the query phrase exists as a keyword inside our loaded letter map
-        if (activeShardData[query]) {
-            const matches = activeShardData[query] || [];
-            const cappedMatches = matches.slice(0, 100); // Cap the results array to protect browser performance
-            
-            cappedMatches.forEach(match => {
-                const prettyTitle = match.filename.replace('thread_', '').replace('.md', '').replace(/_/g, ' ');
+        // Loop through every keyword token stored inside this specific 2-character prefix shard
+        Object.keys(activeShardData).forEach(keyword => {
+            // Check if the indexed keyword contains our partial search query phrase (retaining partial matching)
+            if (keyword.includes(query)) {
+                const matches = activeShardData[keyword] || [];
                 
-                currentSearchResults.push({ category: match.category, filename: match.filename });
-                const matchIndex = currentSearchResults.length - 1;
-                
-                html += `
-                    <div class="category-indicator" style="font-size: 0.8em; color: var(--primary-accent); margin-top: 12px; margin-left: 4px;">📍 Category: ${match.category.replace(/_/g, ' ')}</div>
-                    <div class="thread-link" onclick="loadSearchThreadByIndex(${matchIndex})">📝 ${prettyTitle}</div>
-                `;
-                matchesFound++;
-            });
-
-            if (matches.length > 100) {
-                html += `<p style="color: #666; font-style: italic; padding: 12px 4px;">...and ${matches.length - 100} more database records. Narrow your keyword query parameters to narrow down listings.</p>`;
+                matches.forEach(match => {
+                    const uniqueFileKey = `${match.category}/${match.filename}`;
+                    
+                    // Deduplicate and cap the results layout array at 100 items for safety
+                    if (!seenFiles.has(uniqueFileKey) && matchesFound < 100) {
+                        seenFiles.add(uniqueFileKey);
+                        
+                        const prettyTitle = match.filename.replace('thread_', '').replace('.md', '').replace(/_/g, ' ');
+                        
+                        currentSearchResults.push({ category: match.category, filename: match.filename });
+                        const matchIndex = currentSearchResults.length - 1;
+                        
+                        html += `
+                            <div class="category-indicator" style="font-size: 0.8em; color: var(--primary-accent); margin-top: 12px; margin-left: 4px;">📍 Category: ${match.category.replace(/_/g, ' ')}</div>
+                            <div class="thread-link" onclick="loadSearchThreadByIndex(${matchIndex})">📝 ${prettyTitle}</div>
+                        `;
+                        matchesFound++;
+                    }
+                });
             }
-        }
+        });
 
         if (matchesFound === 0) {
-            html += `<p style="color: #666; font-style: italic;">No exact keyword sequence located inside the global archive catalog index maps.</p>`;
+            html += `<p style="color: #666; font-style: italic;">No title keywords matching "${query}" located inside the global archive catalog index maps.</p>`;
+        } else if (seenFiles.size > 100) {
+            html += `<p style="color: #666; font-style: italic; padding: 12px 4px;">...and ${seenFiles.size - 100} more database records. Narrow your keyword query to refine listings.</p>`;
         }
+
         document.getElementById('content-area').innerHTML = html;
     }
 </script>
