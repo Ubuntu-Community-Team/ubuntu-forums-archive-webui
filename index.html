@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubuntu Forums Archive</title>
+    <link rel="icon" href="https://raw.githubusercontent.com/Ubuntu-Community-Team/ubuntu-forums-archive-webui/refs/heads/main/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,300..800;1,300..800&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <style>
+        /* Modern Theme */
+        :root {
+            --font-main: 'Ubuntu Sans', sans-serif;
+            --page-bg: #f7f7f7;
+            --nav-bg: #ffffff;
+            --nav-text: #111111;
+            --nav-border: #E95420;
+            --content-bg: #ffffff;
+            --text-color: #333333;
+            --primary-accent: #E95420;
+            --border-color: #dbdbdb;
+            --card-bg: #ffffff;
+            --card-border: 4px solid #E95420;
+            --radius: 6px;
+            --shadow: 0 2px 4px rgba(0,0,0,0.05);
+            --header-padding: 10px 20px;
+            --header-display: flex;
+            --logo-color: #E95420;
+            --logo-weight: 700;
+        }
+
+        /* Classic Ubuntu Forums Theme */
+        body.theme-classic {
+            --font-main: 'Ubuntu', Verdana, sans-serif;
+            --page-bg: #ffffff;
+            --nav-bg: #E95420;
+            --nav-text: #ffffff;
+            --nav-border: #311204;
+            --content-bg: #ffffff;
+            --text-color: #000000;
+            --primary-accent: #E95420;
+            --border-color: #d1d1d1;
+            --card-bg: #f2ede4;
+            --card-border: 1px solid #c3baa7;
+            --radius: 4px;
+            --shadow: none;
+            --header-padding: 20px;
+            --logo-color: #ffffff;
+            --logo-weight: 500;
+        }
+
+        /* --- GLOBAL STYLES --- */
+        * { box-sizing: border-box; }
+        body { 
+            background-color: var(--page-bg); 
+            color: var(--text-color); 
+            font-family: var(--font-main);
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.2s;
+        }
+
+        .ubuntu-navbar {
+            background-color: var(--nav-bg);
+            border-bottom: 3px solid var(--nav-border);
+            padding: var(--header-padding);
+            box-shadow: var(--shadow);
+        }
+        .nav-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .logo-area {
+            color: var(--logo-color);
+            font-weight: var(--logo-weight);
+            font-size: 1.8em;
+            cursor: pointer;
+            letter-spacing: -0.5px;
+        }
+        .logo-area span { font-weight: 300; }
+
+        .nav-controls { display: flex; align-items: center; gap: 15px; }
+        
+        .theme-toggle-btn {
+            padding: 8px 16px;
+            border-radius: var(--radius);
+            border: 1px solid var(--border-color);
+            background: #ffffff;
+            color: #333333;
+            cursor: pointer;
+            font-family: var(--font-main);
+            font-size: 0.85em;
+            font-weight: 700;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+        }
+        .theme-toggle-btn:hover { background: #f5f5f5; }
+
+        .search-bar { 
+            padding: 8px 15px; 
+            border-radius: var(--radius); 
+            border: 1px solid var(--border-color); 
+            font-family: var(--font-main); 
+            width: 250px;
+            outline: none;
+        }
+
+        .main-wrapper {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        #content-area { 
+            background: var(--content-bg); 
+            padding: 30px; 
+            border-radius: var(--radius); 
+            box-shadow: var(--shadow); 
+            border: 1px solid var(--border-color);
+            min-height: 400px;
+        }
+        
+        .breadcrumb { 
+            font-size: 0.9em; 
+            margin-bottom: 20px; 
+            padding: 10px 15px;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius);
+        }
+        .breadcrumb span { cursor: pointer; color: #0056b3; }
+        .breadcrumb span:hover { text-decoration: underline; }
+        body.theme-classic .breadcrumb { font-weight: bold; color: #333; }
+        
+        .category-card { 
+            background: var(--card-bg); 
+            padding: 15px; 
+            border-radius: var(--radius); 
+            margin-bottom: 12px; 
+            cursor: pointer; 
+            border-left: var(--card-border);
+            border-top: var(--card-border);
+            border-right: var(--card-border);
+            border-bottom: var(--card-border);
+        }
+        .category-card h3 { margin: 0 0 5px 0; color: var(--primary-accent); }
+        body.theme-classic .category-card h3 { color: #311204; font-size: 1.1em; }
+        
+        .thread-link { 
+            display: block; 
+            padding: 12px; 
+            background: var(--content-bg); 
+            margin-bottom: 6px; 
+            border-radius: var(--radius); 
+            cursor: pointer; 
+            color: #0056b3; 
+            text-decoration: none;
+            border: 1px solid var(--border-color);
+        }
+        .thread-link:hover { text-decoration: underline; background: var(--page-bg); }
+    </style>
+</head>
+<body>
+
+    <nav class="ubuntu-navbar">
+        <div class="nav-container">
+            <div class="logo-area" onclick="goToHome()">
+                ubuntu<span>forums</span>
+            </div>
+                  
+            <div class="nav-controls">
+                <button id="theme-toggle-btn" class="theme-toggle-btn" onclick="toggleTheme()">Ubuntu Forums Theme</button>
+                <input type="text" id="search-input" class="search-bar" placeholder="Search archive..." oninput="handleSearch(this.value)">
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-wrapper">
+        <div id="breadcrumb-area" class="breadcrumb" style="display: none;"></div>
+        <div id="content-area">Loading archive index...</div>
+    </div>
+
+<script>
+    let archiveData = {};
+    let categoryKeys = [];          
+    let loadedCategoryThreads = {}; 
+    let currentSearchResults = [];   
+    
+    // Engine states to handle dynamic alphabet shard caches
+    let currentShardLetter = "";
+    let activeShardData = {};
+
+    const savedTheme = localStorage.getItem('archive-theme');
+    const isCurrentlyClassic = (savedTheme === 'classic');
+    
+    if (isCurrentlyClassic) {
+        document.body.classList.add('theme-classic');
+    }
+    
+    updateButtonText(isCurrentlyClassic);
+
+    fetch('directory.json?t=' + Date.now())
+        .then(response => response.json())
+        .then(data => {
+            archiveData = data;
+            categoryKeys = Object.keys(data.categories);
+            loadHome();
+        })
+        .catch(err => {
+            document.getElementById('content-area').innerHTML = `<p style="color:red;">Error processing core directory manifest.</p>`;
+        });
+
+    function toggleTheme() {
+        const isClassic = document.body.classList.toggle('theme-classic');
+        localStorage.setItem('archive-theme', isClassic ? 'classic' : 'modern');
+        updateButtonText(isClassic);
+    }
+
+    function updateButtonText(isClassic) {
+        const btn = document.getElementById('theme-toggle-btn');
+        if (btn) {
+            btn.textContent = isClassic ? "Modern Theme" : "Ubuntu Forums Theme ❤️";
+        }
+    }
+
+    function goToHome() {
+        document.getElementById('search-input').value = '';
+        loadHome();
+    }
+
+    function updateBreadcrumb(htmlContent) {
+        const el = document.getElementById('breadcrumb-area');
+        if (htmlContent) {
+            el.innerHTML = htmlContent;
+            el.style.display = 'block';
+        } else {
+            el.style.display = 'none';
+        }
+    }
+
+    function loadHome() {
+        updateBreadcrumb('');
+        let html = `<h2 style="margin-top: 0;">Forum Categories</h2>`;
+        categoryKeys.forEach((category, index) => {
+            const info = archiveData.categories[category];
+            html += `
+                <div class="category-card" onclick="loadCategoryByIndex(${index})">
+                    <h3>${category.replace(/_/g, ' ')}</h3>
+                    <small>${info.count.toLocaleString()} threads archived</small>
+                </div>`;
+        });
+        document.getElementById('content-area').innerHTML = html;
+    }
+
+    function loadCategoryByIndex(index, page = 1) {
+        const category = categoryKeys[index];
+        if (category) loadCategory(category, page);
+    }
+
+    const ITEMS_PER_PAGE = 100;
+
+    function loadCategory(category, page = 1) {
+        const categoryIndex = categoryKeys.indexOf(category);
+        updateBreadcrumb(`<span onclick="goToHome()">Ubuntu Forums</span> > ${category.replace(/_/g, ' ')}`);
+        
+        let html = `<h2 style="margin-top: 0;">${category.replace(/_/g, ' ')}</h2>`;
+        
+        const categoryInfo = archiveData.categories[category];
+        if (!categoryInfo) {
+            document.getElementById('content-area').innerHTML = html + `<p style="color:red;">Error: Category data unreadable.</p>`;
+            return;
+        }
+
+        if (!loadedCategoryThreads[category]) {
+            const totalCount = categoryInfo.count || 0;
+            const targetIndexFilename = categoryInfo.index_file; 
+            
+            document.getElementById('content-area').innerHTML = html + `<em>Loading complete thread directory index (${totalCount.toLocaleString()} items)...</em>`;
+            
+            fetch(`sub_indices/${targetIndexFilename}`)
+                .then(res => {
+                    if (!res.ok) throw new Error("Target subset manifest registry missing.");
+                    return res.json();
+                })
+                .then(fullThreadList => {
+                    loadedCategoryThreads[category] = fullThreadList;
+                    renderCategoryPage(categoryIndex, page);
+                })
+                .catch(err => {
+                    document.getElementById('content-area').innerHTML = html + `<p style="color:red;">Failed to retrieve thread map data bundle (${err.message}).</p>`;
+                });
+        } else {
+            renderCategoryPage(categoryIndex, page);
+        }
+    }
+
+    function renderCategoryPage(categoryIndex, page) {
+        const category = categoryKeys[categoryIndex];
+        let html = `<h2 style="margin-top: 0;">${category.replace(/_/g, ' ')}</h2>`;
+        
+        const threads = loadedCategoryThreads[category] || [];
+        const totalThreads = threads.length;
+        const totalPages = Math.ceil(totalThreads / ITEMS_PER_PAGE);
+        
+        const startIndex = (page - 1) * ITEMS_PER_PAGE;
+        const endIndex = startIndex + ITEMS_PER_PAGE;
+        const pageThreads = threads.slice(startIndex, endIndex);
+        
+        pageThreads.forEach((thread, i) => {
+            const globalIndex = startIndex + i;
+            const prettyTitle = thread.replace('thread_', '').replace('.md', '').replace(/_/g, ' ');
+            html += `<div class="thread-link" onclick="loadCategoryThreadByIndex(${categoryIndex}, ${globalIndex})">${prettyTitle}</div>`;
+        });
+        
+        if (totalPages > 1) {
+            html += `
+                <div class="pagination-container" style="margin-top: 25px; display: flex; justify-content: space-between; align-items: center; padding-top: 15px; border-top: 1px solid var(--border-color);">
+                    <button class="theme-toggle-btn" ${page === 1 ? 'disabled style="opacity: 0.4; cursor: not-allowed;"' : ''} onclick="renderCategoryPage(${categoryIndex}, ${page - 1})">⬅️ Previous</button>
+                    <span>Page <strong>${page}</strong> of ${totalPages} <small style="color:#666;">(${totalThreads.toLocaleString()} indexed)</small></span>
+                    <button class="theme-toggle-btn" ${page === totalPages ? 'disabled style="opacity: 0.4; cursor: not-allowed;"' : ''} onclick="renderCategoryPage(${categoryIndex}, ${page + 1})">Next ➡️</button>
+                </div>`;
+        }
+        document.getElementById('content-area').innerHTML = html;
+    }
+
+    function loadCategoryThreadByIndex(categoryIndex, index) {
+        const category = categoryKeys[categoryIndex];
+        const filename = loadedCategoryThreads[category][index];
+        loadThread(category, filename);
+    }
+
+    function loadSearchThreadByIndex(index) {
+        const match = currentSearchResults[index];
+        if (match) loadThread(match.category, match.filename);
+    }
+
+    // Explicit numeric crumb generation fallback mapping
+    function loadThread(category, filename) {
+        const categoryIndex = categoryKeys.indexOf(category);
+        updateBreadcrumb(`<span onclick="goToHome()">Ubuntu Forums</span> > <span onclick="loadCategoryByIndex(${categoryIndex})">${category.replace(/_/g, ' ')}</span> > Thread`);
+        document.getElementById('content-area').innerHTML = `<em>Fetching historical thread content...</em>`;
+        
+        const rawDataUrl = `https://raw.githubusercontent.com/Ubuntu-Community-Team/Ubuntu-Forums-Archive/main/${category}/${encodeURIComponent(filename)}`;
+        
+        fetch(rawDataUrl)
+            .then(response => {
+                if (!response.ok) throw new Error("File could not be resolved on storage servers.");
+                return response.text();
+            })
+            .then(markdown => {
+                document.getElementById('content-area').innerHTML = marked.parse(markdown);
+            })
+            .catch(err => {
+                document.getElementById('content-area').innerHTML = `<p style="color:red; padding:20px;">Target thread document missing or unreachable (${err.message}).</p>`;
+            });
+    }
+    
+    // High-performance search system utilizing inverted alphabet shards
+    function handleSearch(query) {
+        const cleanQuery = query.trim().toLowerCase();
+        if (!cleanQuery) { loadHome(); return; }
+
+        updateBreadcrumb(`<span onclick="goToHome()">Ubuntu Forums</span> > Search Results`);
+        
+        const firstLetter = cleanQuery[0];
+        const targetShard = (/[a-z]/.test(firstLetter)) ? firstLetter : "0";
+
+        if (currentShardLetter !== targetShard) {
+            currentShardLetter = targetShard;
+            fetch(`shards/${targetShard}.json?t=` + Date.now())
+                .then(res => res.json())
+                .then(shardData => {
+                    activeShardData = shardData;
+                    renderShardSearchResults(cleanQuery);
+                })
+                .catch(() => {
+                    activeShardData = {};
+                    renderShardSearchResults(cleanQuery);
+                });
+        } else {
+            renderShardSearchResults(cleanQuery);
+        }
+    }
+
+    function renderShardSearchResults(query) {
+        let html = `<h2 style="margin-top:0;">Global Deep Index Matches for "${query}"</h2>`;
+        currentSearchResults = []; 
+        let matchesFound = 0;
+
+        // Check if the query phrase exists as a keyword inside our loaded letter map
+        if (activeShardData[query]) {
+            const matches = activeShardData[query] || [];
+            const cappedMatches = matches.slice(0, 100); // Cap the results array to protect browser performance
+            
+            cappedMatches.forEach(match => {
+                const prettyTitle = match.filename.replace('thread_', '').replace('.md', '').replace(/_/g, ' ');
+                
+                currentSearchResults.push({ category: match.category, filename: match.filename });
+                const matchIndex = currentSearchResults.length - 1;
+                
+                html += `
+                    <div class="category-indicator" style="font-size: 0.8em; color: var(--primary-accent); margin-top: 12px; margin-left: 4px;">📍 Category: ${match.category.replace(/_/g, ' ')}</div>
+                    <div class="thread-link" onclick="loadSearchThreadByIndex(${matchIndex})">📝 ${prettyTitle}</div>
+                `;
+                matchesFound++;
+            });
+
+            if (matches.length > 100) {
+                html += `<p style="color: #666; font-style: italic; padding: 12px 4px;">...and ${matches.length - 100} more database records. Narrow your keyword query parameters to narrow down listings.</p>`;
+            }
+        }
+
+        if (matchesFound === 0) {
+            html += `<p style="color: #666; font-style: italic;">No exact keyword sequence located inside the global archive catalog index maps.</p>`;
+        }
+        document.getElementById('content-area').innerHTML = html;
+    }
+</script>
+</body>
+</html>

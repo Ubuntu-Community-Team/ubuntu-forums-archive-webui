@@ -1,0 +1,1104 @@
+{
+  "categories": {
+    "Comunidad": {
+      "count": 960,
+      "path": "Comunidad/",
+      "index_file": "Comunidad.json"
+    },
+    "Security_Discussions": {
+      "count": 440,
+      "path": "Security_Discussions/",
+      "index_file": "Security_Discussions.json"
+    },
+    "Members_Information": {
+      "count": 21,
+      "path": "Members_Information/",
+      "index_file": "Members_Information.json"
+    },
+    "New_Mexico_Team_-_US": {
+      "count": 44,
+      "path": "New_Mexico_Team_-_US/",
+      "index_file": "New_Mexico_Team_US.json"
+    },
+    "Washington_DC_Team_-_US": {
+      "count": 32,
+      "path": "Washington_DC_Team_-_US/",
+      "index_file": "Washington_DC_Team_US.json"
+    },
+    "Multimedia_&amp;_Video": {
+      "count": 33720,
+      "path": "Multimedia_&amp;_Video/",
+      "index_file": "Multimedia_amp_Video.json"
+    },
+    "Apple_Hardware_Users": {
+      "count": 12256,
+      "path": "Apple_Hardware_Users/",
+      "index_file": "Apple_Hardware_Users.json"
+    },
+    "BSD": {
+      "count": 199,
+      "path": "BSD/",
+      "index_file": "BSD.json"
+    },
+    "Packaging_and_Compiling_Programs": {
+      "count": 3994,
+      "path": "Packaging_and_Compiling_Programs/",
+      "index_file": "Packaging_and_Compiling_Programs.json"
+    },
+    "Washington_State_Team_-_US": {
+      "count": 21,
+      "path": "Washington_State_Team_-_US/",
+      "index_file": "Washington_State_Team_US.json"
+    },
+    "Mac_OSX": {
+      "count": 425,
+      "path": "Mac_OSX/",
+      "index_file": "Mac_OSX.json"
+    },
+    "Colombia_Team_-_Colombia": {
+      "count": 150,
+      "path": "Colombia_Team_-_Colombia/",
+      "index_file": "Colombia_Team_Colombia.json"
+    },
+    "Desktop_Effects_&amp;_Customization": {
+      "count": 12741,
+      "path": "Desktop_Effects_&amp;_Customization/",
+      "index_file": "Desktop_Effects_amp_Customization.json"
+    },
+    "Maine_Team_-_US": {
+      "count": 30,
+      "path": "Maine_Team_-_US/",
+      "index_file": "Maine_Team_US.json"
+    },
+    "Alabama_Team_-_US": {
+      "count": 105,
+      "path": "Alabama_Team_-_US/",
+      "index_file": "Alabama_Team_US.json"
+    },
+    "Trinidad_&amp;_Tobago_Team": {
+      "count": 17,
+      "path": "Trinidad_&amp;_Tobago_Team/",
+      "index_file": "Trinidad_amp_Tobago_Team.json"
+    },
+    "Wisconsin_Team": {
+      "count": 53,
+      "path": "Wisconsin_Team/",
+      "index_file": "Wisconsin_Team.json"
+    },
+    "Ubuntu_Phone_and_Tablet": {
+      "count": 734,
+      "path": "Ubuntu_Phone_and_Tablet/",
+      "index_file": "Ubuntu_Phone_and_Tablet.json"
+    },
+    "South_Carolina_Team_-_US": {
+      "count": 73,
+      "path": "South_Carolina_Team_-_US/",
+      "index_file": "South_Carolina_Team_US.json"
+    },
+    "Slackware_and_derivatives": {
+      "count": 121,
+      "path": "Slackware_and_derivatives/",
+      "index_file": "Slackware_and_derivatives.json"
+    },
+    "Unanswered_Posts_Team": {
+      "count": 57,
+      "path": "Unanswered_Posts_Team/",
+      "index_file": "Unanswered_Posts_Team.json"
+    },
+    "Ireland_Team_-_Ireland": {
+      "count": 92,
+      "path": "Ireland_Team_-_Ireland/",
+      "index_file": "Ireland_Team_Ireland.json"
+    },
+    "Cafe_Games": {
+      "count": 1097,
+      "path": "Cafe_Games/",
+      "index_file": "Cafe_Games.json"
+    },
+    "Paraguay_Team": {
+      "count": 30,
+      "path": "Paraguay_Team/",
+      "index_file": "Paraguay_Team.json"
+    },
+    "Costa_Rica_Team": {
+      "count": 1,
+      "path": "Costa_Rica_Team/",
+      "index_file": "Costa_Rica_Team.json"
+    },
+    "Bug_Reports__Support": {
+      "count": 129,
+      "path": "Bug_Reports__Support/",
+      "index_file": "Bug_Reports_Support.json"
+    },
+    "El_Salvador_Team": {
+      "count": 1,
+      "path": "El_Salvador_Team/",
+      "index_file": "El_Salvador_Team.json"
+    },
+    "Ubuntu_+1_(Precise_Pangolin)(Closed)": {
+      "count": 2377,
+      "path": "Ubuntu_+1_(Precise_Pangolin)(Closed)/",
+      "index_file": "Ubuntu_1_Precise_Pangolin_Closed.json"
+    },
+    "Multimedia_Production": {
+      "count": 1559,
+      "path": "Multimedia_Production/",
+      "index_file": "Multimedia_Production.json"
+    },
+    "Kansas_Team_-_US": {
+      "count": 33,
+      "path": "Kansas_Team_-_US/",
+      "index_file": "Kansas_Team_US.json"
+    },
+    "Forum_Feedback_&amp;_Help": {
+      "count": 7868,
+      "path": "Forum_Feedback_&amp;_Help/",
+      "index_file": "Forum_Feedback_amp_Help.json"
+    },
+    "Tips_&amp;_Tutorials_Team": {
+      "count": 10,
+      "path": "Tips_&amp;_Tutorials_Team/",
+      "index_file": "Tips_amp_Tutorials_Team.json"
+    },
+    "Za_Team_-_South_Africa": {
+      "count": 109,
+      "path": "Za_Team_-_South_Africa/",
+      "index_file": "Za_Team_South_Africa.json"
+    },
+    "Assistive_Technology_&amp;_Accessibility": {
+      "count": 635,
+      "path": "Assistive_Technology_&amp;_Accessibility/",
+      "index_file": "Assistive_Technology_amp_Accessibility.json"
+    },
+    "Arkansas_Team_-_US": {
+      "count": 41,
+      "path": "Arkansas_Team_-_US/",
+      "index_file": "Arkansas_Team_US.json"
+    },
+    "Greek_team": {
+      "count": 7,
+      "path": "Greek_team/",
+      "index_file": "Greek_team.json"
+    },
+    "Dell_Ubuntu_Support_(CLOSED)": {
+      "count": 7838,
+      "path": "Dell_Ubuntu_Support_(CLOSED)/",
+      "index_file": "Dell_Ubuntu_Support_CLOSED.json"
+    },
+    "openSUSE_and_SUSE_Linux_Enterprise": {
+      "count": 385,
+      "path": "openSUSE_and_SUSE_Linux_Enterprise/",
+      "index_file": "openSUSE_and_SUSE_Linux_Enterprise.json"
+    },
+    "North_Carolina_Team_-_US": {
+      "count": 61,
+      "path": "North_Carolina_Team_-_US/",
+      "index_file": "North_Carolina_Team_US.json"
+    },
+    "Jaunty_Jackalope_Testing_and_Discussion_(CLOSED)": {
+      "count": 3297,
+      "path": "Jaunty_Jackalope_Testing_and_Discussion_(CLOSED)/",
+      "index_file": "Jaunty_Jackalope_Testing_and_Discussion_CLOSED.json"
+    },
+    "Utah_Team_-_US": {
+      "count": 78,
+      "path": "Utah_Team_-_US/",
+      "index_file": "Utah_Team_US.json"
+    },
+    "West_Virginia_Team_-_US": {
+      "count": 11,
+      "path": "West_Virginia_Team_-_US/",
+      "index_file": "West_Virginia_Team_US.json"
+    },
+    "Louisiana_Team_-_US": {
+      "count": 31,
+      "path": "Louisiana_Team_-_US/",
+      "index_file": "Louisiana_Team_US.json"
+    },
+    "Announcements_&amp;_News": {
+      "count": 1280,
+      "path": "Announcements_&amp;_News/",
+      "index_file": "Announcements_amp_News.json"
+    },
+    "Mobile_Technology_Discussions_(CLOSED)": {
+      "count": 633,
+      "path": "Mobile_Technology_Discussions_(CLOSED)/",
+      "index_file": "Mobile_Technology_Discussions_CLOSED.json"
+    },
+    "Cameroon_Team": {
+      "count": 19,
+      "path": "Cameroon_Team/",
+      "index_file": "Cameroon_Team.json"
+    },
+    "Game_Specific_Discussions": {
+      "count": 67,
+      "path": "Game_Specific_Discussions/",
+      "index_file": "Game_Specific_Discussions.json"
+    },
+    "Hardware_&amp;_Laptops": {
+      "count": 44514,
+      "path": "Hardware_&amp;_Laptops/",
+      "index_file": "Hardware_amp_Laptops.json"
+    },
+    "Apple_PPC_Users": {
+      "count": 4994,
+      "path": "Apple_PPC_Users/",
+      "index_file": "Apple_PPC_Users.json"
+    },
+    "x86_64-bit_Users_(Pre_April_'08)": {
+      "count": 10362,
+      "path": "x86_64-bit_Users_(Pre_April_'08)/",
+      "index_file": "x86_64_bit_Users_Pre_April_08.json"
+    },
+    "Sun_Sparc_Users": {
+      "count": 395,
+      "path": "Sun_Sparc_Users/",
+      "index_file": "Sun_Sparc_Users.json"
+    },
+    "Myanmar_Team": {
+      "count": 6,
+      "path": "Myanmar_Team/",
+      "index_file": "Myanmar_Team.json"
+    },
+    "Lucid_Lynx_Testing_and_Discussion_(CLOSED)": {
+      "count": 4267,
+      "path": "Lucid_Lynx_Testing_and_Discussion_(CLOSED)/",
+      "index_file": "Lucid_Lynx_Testing_and_Discussion_CLOSED.json"
+    },
+    "Iowa_Team_-_US": {
+      "count": 3,
+      "path": "Iowa_Team_-_US/",
+      "index_file": "Iowa_Team_US.json"
+    },
+    "New_Hampshire_Team_-_US": {
+      "count": 12,
+      "path": "New_Hampshire_Team_-_US/",
+      "index_file": "New_Hampshire_Team_US.json"
+    },
+    "Portugal_Team": {
+      "count": 8,
+      "path": "Portugal_Team/",
+      "index_file": "Portugal_Team.json"
+    },
+    "Ubuntu_One_(CLOSED)": {
+      "count": 1837,
+      "path": "Ubuntu_One_(CLOSED)/",
+      "index_file": "Ubuntu_One_CLOSED.json"
+    },
+    "New_Jersey_Team_-_US": {
+      "count": 38,
+      "path": "New_Jersey_Team_-_US/",
+      "index_file": "New_Jersey_Team_US.json"
+    },
+    "Server_Platforms": {
+      "count": 56374,
+      "path": "Server_Platforms/",
+      "index_file": "Server_Platforms.json"
+    },
+    "Ubuntu_Leadership": {
+      "count": 3,
+      "path": "Ubuntu_Leadership/",
+      "index_file": "Ubuntu_Leadership.json"
+    },
+    "Testimonials_&amp;_Experiences": {
+      "count": 8976,
+      "path": "Testimonials_&amp;_Experiences/",
+      "index_file": "Testimonials_amp_Experiences.json"
+    },
+    "Ubuntu_System_Panel": {
+      "count": 250,
+      "path": "Ubuntu_System_Panel/",
+      "index_file": "Ubuntu_System_Panel.json"
+    },
+    "Ubuntu_Development_Version": {
+      "count": 5447,
+      "path": "Ubuntu_Development_Version/",
+      "index_file": "Ubuntu_Development_Version.json"
+    },
+    "Ubuntu_Studio": {
+      "count": 7102,
+      "path": "Ubuntu_Studio/",
+      "index_file": "Ubuntu_Studio.json"
+    },
+    "Panama_Team": {
+      "count": 1,
+      "path": "Panama_Team/",
+      "index_file": "Panama_Team.json"
+    },
+    "Oklahoma_Team_-_US": {
+      "count": 53,
+      "path": "Oklahoma_Team_-_US/",
+      "index_file": "Oklahoma_Team_US.json"
+    },
+    "Georgia_Team": {
+      "count": 25,
+      "path": "Georgia_Team/",
+      "index_file": "Georgia_Team.json"
+    },
+    "Indiana_-_US": {
+      "count": 123,
+      "path": "Indiana_-_US/",
+      "index_file": "Indiana_US.json"
+    },
+    "MandrivaMageia": {
+      "count": 94,
+      "path": "MandrivaMageia/",
+      "index_file": "MandrivaMageia.json"
+    },
+    "Full_Circle_Magazine": {
+      "count": 213,
+      "path": "Full_Circle_Magazine/",
+      "index_file": "Full_Circle_Magazine.json"
+    },
+    "Virtualisation": {
+      "count": 13003,
+      "path": "Virtualisation/",
+      "index_file": "Virtualisation.json"
+    },
+    "Windows": {
+      "count": 2875,
+      "path": "Windows/",
+      "index_file": "Windows.json"
+    },
+    "Programming_Talk": {
+      "count": 45840,
+      "path": "Programming_Talk/",
+      "index_file": "Programming_Talk.json"
+    },
+    "Idaho_Team_-_US": {
+      "count": 22,
+      "path": "Idaho_Team_-_US/",
+      "index_file": "Idaho_Team_US.json"
+    },
+    "Instalaci\u00f3n_y_Actualizaci\u00f3n": {
+      "count": 262,
+      "path": "Instalaci\u00f3n_y_Actualizaci\u00f3n/",
+      "index_file": "Instalaci_n_y_Actualizaci_n.json"
+    },
+    "FedoraRedHat_and_derivatives": {
+      "count": 439,
+      "path": "FedoraRedHat_and_derivatives/",
+      "index_file": "FedoraRedHat_and_derivatives.json"
+    },
+    "Argentina_Team": {
+      "count": 2185,
+      "path": "Argentina_Team/",
+      "index_file": "Argentina_Team.json"
+    },
+    "Ubuntu_Women": {
+      "count": 194,
+      "path": "Ubuntu_Women/",
+      "index_file": "Ubuntu_Women.json"
+    },
+    "Andhra_Pradesh_Team_-_India": {
+      "count": 77,
+      "path": "Andhra_Pradesh_Team_-_India/",
+      "index_file": "Andhra_Pradesh_Team_India.json"
+    },
+    "Ubuntu_Brainstorm": {
+      "count": 1147,
+      "path": "Ubuntu_Brainstorm/",
+      "index_file": "Ubuntu_Brainstorm.json"
+    },
+    "Wales_Team": {
+      "count": 12,
+      "path": "Wales_Team/",
+      "index_file": "Wales_Team.json"
+    },
+    "Connecticut_Team": {
+      "count": 47,
+      "path": "Connecticut_Team/",
+      "index_file": "Connecticut_Team.json"
+    },
+    "Canada_Team": {
+      "count": 36,
+      "path": "Canada_Team/",
+      "index_file": "Canada_Team.json"
+    },
+    "Zimbabwe_Team": {
+      "count": 24,
+      "path": "Zimbabwe_Team/",
+      "index_file": "Zimbabwe_Team.json"
+    },
+    "Jordan_Team": {
+      "count": 20,
+      "path": "Jordan_Team/",
+      "index_file": "Jordan_Team.json"
+    },
+    "Bangalore_Team": {
+      "count": 43,
+      "path": "Bangalore_Team/",
+      "index_file": "Bangalore_Team.json"
+    },
+    "Mythbuntu": {
+      "count": 13209,
+      "path": "Mythbuntu/",
+      "index_file": "Mythbuntu.json"
+    },
+    "Honduras_Team": {
+      "count": 12,
+      "path": "Honduras_Team/",
+      "index_file": "Honduras_Team.json"
+    },
+    "Michigan_Team_-_US": {
+      "count": 83,
+      "path": "Michigan_Team_-_US/",
+      "index_file": "Michigan_Team_US.json"
+    },
+    "Senegal_Team": {
+      "count": 2,
+      "path": "Senegal_Team/",
+      "index_file": "Senegal_Team.json"
+    },
+    "Alaska_Team_-_US": {
+      "count": 11,
+      "path": "Alaska_Team_-_US/",
+      "index_file": "Alaska_Team_US.json"
+    },
+    "Tamil_Team_-_India": {
+      "count": 142,
+      "path": "Tamil_Team_-_India/",
+      "index_file": "Tamil_Team_India.json"
+    },
+    "Emulators": {
+      "count": 422,
+      "path": "Emulators/",
+      "index_file": "Emulators.json"
+    },
+    "Education_&amp;_Science": {
+      "count": 3578,
+      "path": "Education_&amp;_Science/",
+      "index_file": "Education_amp_Science.json"
+    },
+    "Karmic_Koala_Testing_and_Discussion_(CLOSED)": {
+      "count": 4798,
+      "path": "Karmic_Koala_Testing_and_Discussion_(CLOSED)/",
+      "index_file": "Karmic_Koala_Testing_and_Discussion_CLOSED.json"
+    },
+    "Ubuntu_Cloud_and_Juju": {
+      "count": 751,
+      "path": "Ubuntu_Cloud_and_Juju/",
+      "index_file": "Ubuntu_Cloud_and_Juju.json"
+    },
+    "Illinois_Team": {
+      "count": 38,
+      "path": "Illinois_Team/",
+      "index_file": "Illinois_Team.json"
+    },
+    "General_Help": {
+      "count": 455165,
+      "path": "General_Help/",
+      "index_file": "General_Help.json"
+    },
+    "Ubuntu_Dev_Link_Forum": {
+      "count": 489,
+      "path": "Ubuntu_Dev_Link_Forum/",
+      "index_file": "Ubuntu_Dev_Link_Forum.json"
+    },
+    "Security": {
+      "count": 14228,
+      "path": "Security/",
+      "index_file": "Security.json"
+    },
+    "Weekly_Newsletter": {
+      "count": 807,
+      "path": "Weekly_Newsletter/",
+      "index_file": "Weekly_Newsletter.json"
+    },
+    "Tutorials": {
+      "count": 1133,
+      "path": "Tutorials/",
+      "index_file": "Tutorials.json"
+    },
+    "Singapore_Team": {
+      "count": 6,
+      "path": "Singapore_Team/",
+      "index_file": "Singapore_Team.json"
+    },
+    "Outdated_Tutorials_&amp;_Tips": {
+      "count": 4797,
+      "path": "Outdated_Tutorials_&amp;_Tips/",
+      "index_file": "Outdated_Tutorials_amp_Tips.json"
+    },
+    "Any_Other_OS": {
+      "count": 4331,
+      "path": "Any_Other_OS/",
+      "index_file": "Any_Other_OS.json"
+    },
+    "Request_a_LoCo_forum": {
+      "count": 156,
+      "path": "Request_a_LoCo_forum/",
+      "index_file": "Request_a_LoCo_forum.json"
+    },
+    "Ubuntu_Translations": {
+      "count": 37,
+      "path": "Ubuntu_Translations/",
+      "index_file": "Ubuntu_Translations.json"
+    },
+    "Maverick_Meerkat_Testing_and_Discussion_(CLOSED)": {
+      "count": 1466,
+      "path": "Maverick_Meerkat_Testing_and_Discussion_(CLOSED)/",
+      "index_file": "Maverick_Meerkat_Testing_and_Discussion_CLOSED.json"
+    },
+    "Membership_Applications": {
+      "count": 115,
+      "path": "Membership_Applications/",
+      "index_file": "Membership_Applications.json"
+    },
+    "BUM_-_Boot_Up_Manager": {
+      "count": 32,
+      "path": "BUM_-_Boot_Up_Manager/",
+      "index_file": "BUM_Boot_Up_Manager.json"
+    },
+    "Software": {
+      "count": 4558,
+      "path": "Software/",
+      "index_file": "Software.json"
+    },
+    "New_York_-_US": {
+      "count": 122,
+      "path": "New_York_-_US/",
+      "index_file": "New_York_US.json"
+    },
+    "Mississippi_Team_-_US": {
+      "count": 10,
+      "path": "Mississippi_Team_-_US/",
+      "index_file": "Mississippi_Team_US.json"
+    },
+    "Arizona_Team_-_US": {
+      "count": 98,
+      "path": "Arizona_Team_-_US/",
+      "index_file": "Arizona_Team_US.json"
+    },
+    "Afghanistan_Team": {
+      "count": 3,
+      "path": "Afghanistan_Team/",
+      "index_file": "Afghanistan_Team.json"
+    },
+    "Northeastern_Team_-_US": {
+      "count": 40,
+      "path": "Northeastern_Team_-_US/",
+      "index_file": "Northeastern_Team_US.json"
+    },
+    "Namibia_Team": {
+      "count": 2,
+      "path": "Namibia_Team/",
+      "index_file": "Namibia_Team.json"
+    },
+    "Ubuntu_Christian_Edition": {
+      "count": 1014,
+      "path": "Ubuntu_Christian_Edition/",
+      "index_file": "Ubuntu_Christian_Edition.json"
+    },
+    "Chile_Team": {
+      "count": 28,
+      "path": "Chile_Team/",
+      "index_file": "Chile_Team.json"
+    },
+    "Installation_&amp;_Upgrades": {
+      "count": 185570,
+      "path": "Installation_&amp;_Upgrades/",
+      "index_file": "Installation_amp_Upgrades.json"
+    },
+    "Libya_Team": {
+      "count": 4,
+      "path": "Libya_Team/",
+      "index_file": "Libya_Team.json"
+    },
+    "Venezuela_Team": {
+      "count": 26,
+      "path": "Venezuela_Team/",
+      "index_file": "Venezuela_Team.json"
+    },
+    "Australia_Team": {
+      "count": 26,
+      "path": "Australia_Team/",
+      "index_file": "Australia_Team.json"
+    },
+    "Minnesota_Team_-_US": {
+      "count": 54,
+      "path": "Minnesota_Team_-_US/",
+      "index_file": "Minnesota_Team_US.json"
+    },
+    "Uruguay_Team": {
+      "count": 46,
+      "path": "Uruguay_Team/",
+      "index_file": "Uruguay_Team.json"
+    },
+    "Development_CDDVD_Image_Testing": {
+      "count": 466,
+      "path": "Development_CDDVD_Image_Testing/",
+      "index_file": "Development_CDDVD_Image_Testing.json"
+    },
+    "Other_Operating_Systems": {
+      "count": 1,
+      "path": "Other_Operating_Systems/",
+      "index_file": "Other_Operating_Systems.json"
+    },
+    "Natty_Narwhal_Testing_and_Discussion_(CLOSED)": {
+      "count": 2180,
+      "path": "Natty_Narwhal_Testing_and_Discussion_(CLOSED)/",
+      "index_file": "Natty_Narwhal_Testing_and_Discussion_CLOSED.json"
+    },
+    "Catalan_Team": {
+      "count": 4187,
+      "path": "Catalan_Team/",
+      "index_file": "Catalan_Team.json"
+    },
+    "Hardware_Team": {
+      "count": 11,
+      "path": "Hardware_Team/",
+      "index_file": "Hardware_Team.json"
+    },
+    "Missouri_Team_-_US": {
+      "count": 74,
+      "path": "Missouri_Team_-_US/",
+      "index_file": "Missouri_Team_US.json"
+    },
+    "Ubuntu_Backports": {
+      "count": 989,
+      "path": "Ubuntu_Backports/",
+      "index_file": "Ubuntu_Backports.json"
+    },
+    "Virginia_Team_-_US": {
+      "count": 55,
+      "path": "Virginia_Team_-_US/",
+      "index_file": "Virginia_Team_US.json"
+    },
+    "UbuntuDebian_BASED": {
+      "count": 1547,
+      "path": "UbuntuDebian_BASED/",
+      "index_file": "UbuntuDebian_BASED.json"
+    },
+    "Albania_Team": {
+      "count": 20,
+      "path": "Albania_Team/",
+      "index_file": "Albania_Team.json"
+    },
+    "Sudan_Team": {
+      "count": 162,
+      "path": "Sudan_Team/",
+      "index_file": "Sudan_Team.json"
+    },
+    "Maryland_Team_-_US": {
+      "count": 142,
+      "path": "Maryland_Team_-_US/",
+      "index_file": "Maryland_Team_US.json"
+    },
+    "New_to_Ubuntu": {
+      "count": 188780,
+      "path": "New_to_Ubuntu/",
+      "index_file": "New_to_Ubuntu.json"
+    },
+    "Nevada_Team_-_US": {
+      "count": 11,
+      "path": "Nevada_Team_-_US/",
+      "index_file": "Nevada_Team_US.json"
+    },
+    "Ubuntu_Gamers_Arena": {
+      "count": 286,
+      "path": "Ubuntu_Gamers_Arena/",
+      "index_file": "Ubuntu_Gamers_Arena.json"
+    },
+    "Georgia_Team_-_US": {
+      "count": 122,
+      "path": "Georgia_Team_-_US/",
+      "index_file": "Georgia_Team_US.json"
+    },
+    "Bolivia_Team": {
+      "count": 19,
+      "path": "Bolivia_Team/",
+      "index_file": "Bolivia_Team.json"
+    },
+    "Wine": {
+      "count": 15334,
+      "path": "Wine/",
+      "index_file": "Wine.json"
+    },
+    "Kenyan_Team_-_Kenya": {
+      "count": 52,
+      "path": "Kenyan_Team_-_Kenya/",
+      "index_file": "Kenyan_Team_Kenya.json"
+    },
+    "Resolution_Centre": {
+      "count": 5224,
+      "path": "Resolution_Centre/",
+      "index_file": "Resolution_Centre.json"
+    },
+    "Arch_and_derivatives": {
+      "count": 491,
+      "path": "Arch_and_derivatives/",
+      "index_file": "Arch_and_derivatives.json"
+    },
+    "Ubuntu_Customization_Guide": {
+      "count": 131,
+      "path": "Ubuntu_Customization_Guide/",
+      "index_file": "Ubuntu_Customization_Guide.json"
+    },
+    "x86_64-bit_Users": {
+      "count": 5754,
+      "path": "x86_64-bit_Users/",
+      "index_file": "x86_64_bit_Users.json"
+    },
+    "Gentoo_and_derivatives": {
+      "count": 151,
+      "path": "Gentoo_and_derivatives/",
+      "index_file": "Gentoo_and_derivatives.json"
+    },
+    "Dell__Ubuntu_Support": {
+      "count": 2780,
+      "path": "Dell__Ubuntu_Support/",
+      "index_file": "Dell_Ubuntu_Support.json"
+    },
+    "Documentation_and_Community_Wiki_Discussions": {
+      "count": 93,
+      "path": "Documentation_and_Community_Wiki_Discussions/",
+      "index_file": "Documentation_and_Community_Wiki_Discussions.json"
+    },
+    "Absolute_Beginner_Talk": {
+      "count": 159473,
+      "path": "Absolute_Beginner_Talk/",
+      "index_file": "Absolute_Beginner_Talk.json"
+    },
+    "Peru_Team": {
+      "count": 55,
+      "path": "Peru_Team/",
+      "index_file": "Peru_Team.json"
+    },
+    "Colorado_Team_-_US": {
+      "count": 69,
+      "path": "Colorado_Team_-_US/",
+      "index_file": "Colorado_Team_US.json"
+    },
+    "PCLinuxOS": {
+      "count": 7,
+      "path": "PCLinuxOS/",
+      "index_file": "PCLinuxOS.json"
+    },
+    "Desktop_Environments": {
+      "count": 120602,
+      "path": "Desktop_Environments/",
+      "index_file": "Desktop_Environments.json"
+    },
+    "Saudi_Arabia_Team": {
+      "count": 73,
+      "path": "Saudi_Arabia_Team/",
+      "index_file": "Saudi_Arabia_Team.json"
+    },
+    "Florida_Team_-_US": {
+      "count": 123,
+      "path": "Florida_Team_-_US/",
+      "index_file": "Florida_Team_US.json"
+    },
+    "Ecuador_Team": {
+      "count": 82,
+      "path": "Ecuador_Team/",
+      "index_file": "Ecuador_Team.json"
+    },
+    "Other_OS_Talk": {
+      "count": 2733,
+      "path": "Other_OS_Talk/",
+      "index_file": "Other_OS_Talk.json"
+    },
+    "Intrepid_Ibex_Testing_and_Discussion_(CLOSED)": {
+      "count": 3088,
+      "path": "Intrepid_Ibex_Testing_and_Discussion_(CLOSED)/",
+      "index_file": "Intrepid_Ibex_Testing_and_Discussion_CLOSED.json"
+    },
+    "Pennsylvania_Team_-_US": {
+      "count": 265,
+      "path": "Pennsylvania_Team_-_US/",
+      "index_file": "Pennsylvania_Team_US.json"
+    },
+    "California_Team_-_US": {
+      "count": 123,
+      "path": "California_Team_-_US/",
+      "index_file": "California_Team_US.json"
+    },
+    "Texas_Team_-_US": {
+      "count": 46,
+      "path": "Texas_Team_-_US/",
+      "index_file": "Texas_Team_US.json"
+    },
+    "Apple_Intel_Users": {
+      "count": 2065,
+      "path": "Apple_Intel_Users/",
+      "index_file": "Apple_Intel_Users.json"
+    },
+    "Ubuntu_Application_Development": {
+      "count": 596,
+      "path": "Ubuntu_Application_Development/",
+      "index_file": "Ubuntu_Application_Development.json"
+    },
+    "Networking_&amp;_Wireless": {
+      "count": 144225,
+      "path": "Networking_&amp;_Wireless/",
+      "index_file": "Networking_amp_Wireless.json"
+    },
+    "Art_&amp;_Design": {
+      "count": 6781,
+      "path": "Art_&amp;_Design/",
+      "index_file": "Art_amp_Design.json"
+    },
+    "Closed_Requests": {
+      "count": 65,
+      "path": "Closed_Requests/",
+      "index_file": "Closed_Requests.json"
+    },
+    "Egypt_Team": {
+      "count": 134,
+      "path": "Egypt_Team/",
+      "index_file": "Egypt_Team.json"
+    },
+    "Gaming_&amp;_Leisure": {
+      "count": 23908,
+      "path": "Gaming_&amp;_Leisure/",
+      "index_file": "Gaming_amp_Leisure.json"
+    },
+    "System76_Support": {
+      "count": 5850,
+      "path": "System76_Support/",
+      "index_file": "System76_Support.json"
+    },
+    "Tennessee_Team_-_US": {
+      "count": 82,
+      "path": "Tennessee_Team_-_US/",
+      "index_file": "Tennessee_Team_US.json"
+    },
+    "Repositories_&amp;_Backports": {
+      "count": 2585,
+      "path": "Repositories_&amp;_Backports/",
+      "index_file": "Repositories_amp_Backports.json"
+    },
+    "Kentucky_Team_-_US": {
+      "count": 84,
+      "path": "Kentucky_Team_-_US/",
+      "index_file": "Kentucky_Team_US.json"
+    },
+    "Philippine_Team": {
+      "count": 1818,
+      "path": "Philippine_Team/",
+      "index_file": "Philippine_Team.json"
+    },
+    "Montana_Team_-_US": {
+      "count": 20,
+      "path": "Montana_Team_-_US/",
+      "index_file": "Montana_Team_US.json"
+    },
+    "Hong_Kong_Team": {
+      "count": 74,
+      "path": "Hong_Kong_Team/",
+      "index_file": "Hong_Kong_Team.json"
+    },
+    "Requests": {
+      "count": 389,
+      "path": "Requests/",
+      "index_file": "Requests.json"
+    },
+    "Algerian_Team": {
+      "count": 12,
+      "path": "Algerian_Team/",
+      "index_file": "Algerian_Team.json"
+    },
+    "Forum_Council_Agenda_Items": {
+      "count": 22,
+      "path": "Forum_Council_Agenda_Items/",
+      "index_file": "Forum_Council_Agenda_Items.json"
+    },
+    "Qatar_Team": {
+      "count": 2,
+      "path": "Qatar_Team/",
+      "index_file": "Qatar_Team.json"
+    },
+    "Nebraska_Team_-_US": {
+      "count": 2,
+      "path": "Nebraska_Team_-_US/",
+      "index_file": "Nebraska_Team_US.json"
+    },
+    "Ubuntuzilla": {
+      "count": 357,
+      "path": "Ubuntuzilla/",
+      "index_file": "Ubuntuzilla.json"
+    },
+    "Asus_Ubuntu_Support_(CLOSED)": {
+      "count": 1143,
+      "path": "Asus_Ubuntu_Support_(CLOSED)/",
+      "index_file": "Asus_Ubuntu_Support_CLOSED.json"
+    },
+    "Ohio_Team_-_US": {
+      "count": 250,
+      "path": "Ohio_Team_-_US/",
+      "index_file": "Ohio_Team_US.json"
+    },
+    "Debian": {
+      "count": 826,
+      "path": "Debian/",
+      "index_file": "Debian.json"
+    },
+    "MINT": {
+      "count": 1123,
+      "path": "MINT/",
+      "index_file": "MINT.json"
+    },
+    "Brazil_Team": {
+      "count": 4,
+      "path": "Brazil_Team/",
+      "index_file": "Brazil_Team.json"
+    },
+    "Morocco_Team": {
+      "count": 17,
+      "path": "Morocco_Team/",
+      "index_file": "Morocco_Team.json"
+    },
+    "South_Dakota_Team_-_US": {
+      "count": 17,
+      "path": "South_Dakota_Team_-_US/",
+      "index_file": "South_Dakota_Team_US.json"
+    },
+    "The_Fridge_Discussions": {
+      "count": 1512,
+      "path": "The_Fridge_Discussions/",
+      "index_file": "The_Fridge_Discussions.json"
+    },
+    "Forum_Members_Chat": {
+      "count": 77,
+      "path": "Forum_Members_Chat/",
+      "index_file": "Forum_Members_Chat.json"
+    },
+    "Delhi_Team": {
+      "count": 40,
+      "path": "Delhi_Team/",
+      "index_file": "Delhi_Team.json"
+    },
+    "US_LoCo_Teams": {
+      "count": 52,
+      "path": "US_LoCo_Teams/",
+      "index_file": "US_LoCo_Teams.json"
+    },
+    "Austria_Team": {
+      "count": 5,
+      "path": "Austria_Team/",
+      "index_file": "Austria_Team.json"
+    },
+    "The_Cafe": {
+      "count": 68472,
+      "path": "The_Cafe/",
+      "index_file": "The_Cafe.json"
+    },
+    "Switzerland_Team": {
+      "count": 8,
+      "path": "Switzerland_Team/",
+      "index_file": "Switzerland_Team.json"
+    },
+    "Beginner_Team": {
+      "count": 150,
+      "path": "Beginner_Team/",
+      "index_file": "Beginner_Team.json"
+    },
+    "Multimedia_Software": {
+      "count": 73346,
+      "path": "Multimedia_Software/",
+      "index_file": "Multimedia_Software.json"
+    },
+    "Ubuntu,_Linux_and_OS_Chat": {
+      "count": 4830,
+      "path": "Ubuntu,_Linux_and_OS_Chat/",
+      "index_file": "Ubuntu_Linux_and_OS_Chat.json"
+    },
+    "Ubuntu_+1_(Quantal_Quetzal)_(Closed)": {
+      "count": 1053,
+      "path": "Ubuntu_+1_(Quantal_Quetzal)_(Closed)/",
+      "index_file": "Ubuntu_1_Quantal_Quetzal_Closed.json"
+    },
+    "Recurring_Discussions": {
+      "count": 4199,
+      "path": "Recurring_Discussions/",
+      "index_file": "Recurring_Discussions.json"
+    },
+    "Galician_LoCo_Team": {
+      "count": 16,
+      "path": "Galician_LoCo_Team/",
+      "index_file": "Galician_LoCo_Team.json"
+    },
+    "Uganda_Team": {
+      "count": 1,
+      "path": "Uganda_Team/",
+      "index_file": "Uganda_Team.json"
+    },
+    "Kurdish_Team_-_Kurdistan": {
+      "count": 11,
+      "path": "Kurdish_Team_-_Kurdistan/",
+      "index_file": "Kurdish_Team_Kurdistan.json"
+    },
+    "Centroamerica_Team": {
+      "count": 267,
+      "path": "Centroamerica_Team/",
+      "index_file": "Centroamerica_Team.json"
+    },
+    "Lebanon_Team": {
+      "count": 20,
+      "path": "Lebanon_Team/",
+      "index_file": "Lebanon_Team.json"
+    },
+    "Oneiric_Ocelot_Testing_and_Discussion_(CLOSED)": {
+      "count": 1946,
+      "path": "Oneiric_Ocelot_Testing_and_Discussion_(CLOSED)/",
+      "index_file": "Oneiric_Ocelot_Testing_and_Discussion_CLOSED.json"
+    },
+    "Quebec_Team": {
+      "count": 8,
+      "path": "Quebec_Team/",
+      "index_file": "Quebec_Team.json"
+    },
+    "Tunisia_Team": {
+      "count": 161,
+      "path": "Tunisia_Team/",
+      "index_file": "Tunisia_Team.json"
+    },
+    "United_Kingdom_Team": {
+      "count": 153,
+      "path": "United_Kingdom_Team/",
+      "index_file": "United_Kingdom_Team.json"
+    },
+    "Ubuntu_Moblin_Remix": {
+      "count": 411,
+      "path": "Ubuntu_Moblin_Remix/",
+      "index_file": "Ubuntu_Moblin_Remix.json"
+    },
+    "Bangladesh_Team": {
+      "count": 65,
+      "path": "Bangladesh_Team/",
+      "index_file": "Bangladesh_Team.json"
+    },
+    "Oregon_Team_-_US": {
+      "count": 21,
+      "path": "Oregon_Team_-_US/",
+      "index_file": "Oregon_Team_US.json"
+    },
+    "Hardware": {
+      "count": 95191,
+      "path": "Hardware/",
+      "index_file": "Hardware.json"
+    },
+    "Rhode_Island_Team_-_US": {
+      "count": 8,
+      "path": "Rhode_Island_Team_-_US/",
+      "index_file": "Rhode_Island_Team_US.json"
+    },
+    "Massachusetts_Team": {
+      "count": 80,
+      "path": "Massachusetts_Team/",
+      "index_file": "Massachusetts_Team.json"
+    },
+    "DeferredInvalid_Requests": {
+      "count": 137,
+      "path": "DeferredInvalid_Requests/",
+      "index_file": "DeferredInvalid_Requests.json"
+    },
+    "Hawaii_Team_-_US": {
+      "count": 9,
+      "path": "Hawaii_Team_-_US/",
+      "index_file": "Hawaii_Team_US.json"
+    }
+  }
+}
